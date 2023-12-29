@@ -1,0 +1,14 @@
+{% load static %}
+<html>
+  <head>
+    <link rel="stylesheet" href="{% static 'myapp/style.css' %}" />
+  </head>
+  <body>
+    <h1>THIS INDEX</h1>
+    <h2>
+      {% for item in items %}
+        <a href="{% url 'myapp:show_product' item.id %}">ID: {{ item.id }} | Name: {{ item.name }} | price: {{ item.price }} <br /></a>
+      {% endfor %}
+    </h2>
+  </body>
+</html>
