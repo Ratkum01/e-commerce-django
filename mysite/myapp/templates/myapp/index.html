@@ -1,9 +1,18 @@
 {% load static %}
 <html>
   <head>
-    <link rel="stylesheet" href="{% static 'myapp/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'myapp/styles.css' %}" />
   </head>
   <body>
+    <nav>
+      <div>
+        <div>
+          <div>
+            <div><img class="h-8 w-8" src="{% static 'myapp/images/icon_shop.png' %}" alt=""></div>
+          </div>
+        </div>
+      </div>
+    </nav>
     <h1>THIS INDEX</h1>
     <h2>
       {% for item in items %}
